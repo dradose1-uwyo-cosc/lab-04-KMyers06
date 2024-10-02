@@ -3,10 +3,10 @@
 # 10/2/24
 # Lab 03 
 # Lab Section: 15
-# Sources, people worked with, help given to: 
-# your
-# comments
-# here
+# Sources, people worked with, help given to: Zack Smith 
+# "Chat-GPT-3. (2024,10,2).'high_temp=0 for max_temp in max_temps: if max_temp>high_temp:   max_temp=high_templow_temp=0for min_temp in min_temps:   if min_temp<low_temp: min_temp low_temp print(high_temp) print(low_temp)' Generated using Open AI 'https://chatgpt.com/'"
+
+
 
 
 
@@ -98,8 +98,30 @@ min_temps = [
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
-    
+avg_1=0
+numbers_in_max=0
+for max_temp in max_temps:
+    avg_1=max_temp+avg_1
+    numbers_in_max=numbers_in_max+1  
+avg_2=0
+numbers_in_min=0
+for min_temp in min_temps:
+    avg_2=min_temp+avg_2
+    numbers_in_min=numbers_in_min+1
+
+print(avg_1/numbers_in_max)
+
+print(avg_2/numbers_in_min)
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
+high_temp=0
+for max_temp in max_temps:
+    if max_temp>high_temp:
+        high_temp=max_temp
+low_temp=0
+for min_temp in min_temps:
+    if min_temp<low_temp:
+        low_temp=min_temp
 
-
+print(high_temp)
+print(low_temp)
